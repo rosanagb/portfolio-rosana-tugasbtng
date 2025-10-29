@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Rosana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="antialiased text-slate-800 bg-slate-50">
+    <!-- NAVBAR -->
+    <header
+      class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between py-3">
+          <a href="#home" class="font-bold text-lg tracking-wide text-slate-900"
+            >My<span class="text-indigo-600">Portofolio</span></a
+          >
+          <nav class="hidden md:flex items-center gap-6">
+            <a href="#home" class="hover:text-indigo-600">Home</a>
+            <a href="#profile" class="hover:text-indigo-600">Profile</a>
+            <a href="#experience" class="hover:text-indigo-600">Pengalaman</a>
+            <a href="#contact" class="hover:text-indigo-600">Kontak</a>
+          </nav>
+          <button
+            id="burger"
+            class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-slate-300"
+          >
+            ≡
+          </button>
+        </div>
+        <div id="mobileMenu" class="md:hidden hidden pb-3">
+          <nav class="flex flex-col gap-2">
+            <a
+              onclick="closeMenu()"
+              href="#home"
+              class="py-2 px-3 rounded-lg hover:bg-slate-100"
+              >Home</a
+            >
+            <a
+              onclick="closeMenu()"
+              href="#profile"
+              class="py-2 px-3 rounded-lg hover:bg-slate-100"
+              >Profile</a
+            >
+            <a
+              onclick="closeMenu()"
+              href="#experience"
+              class="py-2 px-3 rounded-lg hover:bg-slate-100"
+              >Pengalaman</a
+            >
+            <a
+              onclick="closeMenu()"
+              href="#contact"
+              class="py-2 px-3 rounded-lg hover:bg-slate-100"
+              >Kontak</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- HERO -->
+      <section class="relative bg-blue-100">
+        <div
+          class="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center"
+        >
+          <div>
+            <h1
+              class="text-4xl md:text-6xl font-extrabold leading-tight text-slate-900"
+            >
+              Halo, saya Rosana 👋
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-slate-700">
+              Mahasiswi semester 3 Program Studi Teknik Informatika di
+              Universitas Dian Nuswantoro, Semarang.
+            </p>
+          </div>
+          
+          <div class="flex justify-center md:justify-end">
+            <img
+              src="img/foto.png"
+              alt=""
+              class="w-full max-w-md rounded-xl shadow-lg object-cover border-4 border-white"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFILE -->
+      <section id="profile" class="border-t border-slate-200 bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-14 md:py-20">
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Profile</h2>
+          <div class="mt-6 grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-2 space-y-4 text-slate-600">
+              <p>
+                Sebagai seorang mahasiswi yang masih belajar, saya terus
+                berusaha memperdalam dasar-dasar pengembangan web seperti HTML,
+                CSS, Tailwind. Saya suka membuat desain halaman yang bersih dan
+                mudah dipahami. Dalam setiap tugas atau proyek, saya berusaha
+                memadukan kreativitas, struktur yang rapi, dan pemahaman logika
+                pemrograman.
+              </p>
+              <p>
+                Saya tertarik pada pengembangan web front-end dan desain
+                antarmuka pengguna yang sederhana, fungsional, dan menyenangkan
+                untuk digunakan. Selain bidang teknologi, saya juga memiliki
+                semangat dalam pelayanan dan komunikasi, karena saya percaya
+                bahwa teknologi seharusnya membantu manusia untuk saling
+                terhubung dan berkembang.
+              </p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-slate-900">Info Singkat</h3>
+              <ul class="mt-3 space-y-2 text-slate-600">
+                <li>Lokasi: Semarang, Indonesia</li>
+                <li>Email: 111202415708@mhs.dinus.ac.id</li>
+                <li>Minat: Front-End, UI/UX, Konten Kreatif</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pengalaman -->
+      <section id="experience" class="border-t border-slate-200 bg-blue-50">
+        <div class="max-w-6xl mx-auto px-4 py-14 md:py-20">
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900">
+            Pengalaman
+          </h2>
+          <p class="mt-1 text-slate-600">
+            Beberapa pengalaman dan proyek yang pernah saya kerjakan.
+          </p>
+
+          <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              class="group rounded-2xl border border-slate-200 bg-white overflow-hidden hover:shadow-lg transition"
+            >
+              <img
+                src="img/web.png"
+                alt=""
+                class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div class="p-4">
+                <h3
+                  class="font-semibold text-slate-900 group-hover:text-indigo-600"
+                >
+                  Web Komunitas
+                </h3>
+                <p class="mt-1 text-sm text-slate-600">
+                  Membangun website komunitas dengan Tailwind, fokus pada
+                  responsivitas dan navigasi.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="group rounded-2xl border border-slate-200 bg-white overflow-hidden hover:shadow-lg transition"
+            >
+              <img
+                src="img/desain.png"
+                alt=""
+                class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div class="p-4">
+                <h3
+                  class="font-semibold text-slate-900 group-hover:text-indigo-600"
+                >
+                  Desain Canva
+                </h3>
+                <p class="mt-1 text-sm text-slate-600">
+                  Desain Canva dengan visual yang jelas dan konsistensi warna.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="group rounded-2xl border border-slate-200 bg-white overflow-hidden hover:shadow-lg transition"
+            >
+              <img
+                src="img/brosur.png"
+                alt="Poster Digital"
+                class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div class="p-4">
+                <h3
+                  class="font-semibold text-slate-900 group-hover:text-indigo-600"
+                >
+                  Poster Digital
+                </h3>
+                <p class="mt-1 text-sm text-slate-600">
+                  Membuat desain poster digital untuk promosi acara dengan
+                  visual yang menarik.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="border-t border-slate-200 bg-slate-50">
+        <div class="max-w-3xl mx-auto px-4 py-14 md:py-20">
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-900">Kontak</h2>
+          <p class="mt-1 text-slate-600">
+            Isi form di bawah untuk menghubungi saya.
+          </p>
+
+          <form
+            class="mt-6 grid gap-4"
+            onsubmit="event.preventDefault(); alert('Pesan terkirim (dummy).');"
+          >
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-slate-700"
+                  >Nama</label
+                >
+                <input
+                  type="text"
+                  required
+                  class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  placeholder="Nama lengkap"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-700"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  required
+                  class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  placeholder="email@contoh.com"
+                />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-slate-700"
+                >Pesan</label
+              >
+              <textarea
+                rows="5"
+                required
+                class="mt-1 w-full rounded-xl border border-slate-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                placeholder="Tulis pesanmu di sini..."
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="inline-flex justify-center items-center px-6 py-3 rounded-xl bg-indigo-600 text-white font-medium hover:bg-indigo-700"
+            >
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="border-t border-slate-200 bg-white">
+      <div
+        class="max-w-6xl mx-auto px-4 py-6 text-sm text-slate-500 flex flex-col md:flex-row items-center justify-between gap-2"
+      >
+        <p>© <span id="y"></span> Rosana</p>
+
+        <div class="flex items-center gap-4">
+          <!-- Instagram -->
+          <a href="#" class="hover:text-indigo-600" aria-label="Instagram">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-6 h-6"
+            >
+              <path
+                d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+              />
+            </svg>
+          </a>
+
+          <!-- Email -->
+          <a
+            href="mailto:rosana@email.com"
+            class="hover:text-indigo-600"
+            aria-label="Email"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-6 h-6"
+            >
+              <path
+                d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13l8-6.99V6H4zm0 12h16V9l-8 7-8-7v9z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+      const burger = document.getElementById("burger");
+      const panel = document.getElementById("mobileMenu");
+      function closeMenu() {
+        panel.classList.add("hidden");
+      }
+      burger?.addEventListener("click", () => panel.classList.toggle("hidden"));
+    </script>
+  </body>
+</html>
